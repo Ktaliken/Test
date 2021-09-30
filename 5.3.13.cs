@@ -6,8 +6,7 @@ namespace ConsoleApp7
     {
         public static void Main(string[] args)
         {
-            int num = 2;
-            int[] array = GetArrayFromConsole(ref num);
+            int[] array = GetArrayFromConsole();
             int[] sorted_asc;
             int[] sorted_desc;
 
@@ -26,9 +25,9 @@ namespace ConsoleApp7
             Console.ReadKey();
         }
 
-        static int[] GetArrayFromConsole(ref int num)
+        static int[] GetArrayFromConsole()
         {
-            num = 6;
+            int num = 6;
             var result = new int[num];
             for (int i = 0; i < result.Length; i++)
             {
